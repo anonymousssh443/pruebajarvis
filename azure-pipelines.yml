@@ -3,6 +3,19 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+parameters:
+- name: Capacidad
+  type: string
+
+- name: Funcionalidad
+  type: string
+
+- name: Tipo
+  type: string
+
+- name: strategy
+  type: string
+
 trigger:
 - main
 
@@ -15,5 +28,8 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    echo "${{ parameters.Capacidad }} ${{ parameters.Funcionalidad }}"
+    
   displayName: 'Run a multi-line script'
+
+
