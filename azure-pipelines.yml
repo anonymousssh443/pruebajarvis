@@ -4,16 +4,13 @@
 # https://aka.ms/yaml
 
 parameters:
-- name: Capacidad
+- name: capacidad
   type: string
 
-- name: Funcionalidad
+- name: funcionalidad
   type: string
 
-- name: Tipo
-  type: string
-
-- name: strategy
+- name: tipo
   type: string
 
 trigger:
